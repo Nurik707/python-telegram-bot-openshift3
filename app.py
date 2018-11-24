@@ -43,7 +43,7 @@ def calc(bot, update):
     update.message.reply_text(text=result)
 
 def error(bot, update, error):
-    """Log Errors caused by Updates."""
+    """Log Errors caused by  Updates."""
     logger.warning('Update "%s" caused error "%s"' % (update, error))
 
 
