@@ -53,7 +53,7 @@ def setup():
     dp = updater.dispatcher  # Get the dispatcher to register handlers
     dp.add_handler(CommandHandler("astana", astana))
     dp.add_handler(CommandHandler("expo", expo))
-    dp.add_handler(MessageHandler(Filter.text, calc))
+    dp.add_handler(MessageHandler(Filters.text, calc))
     dp.add_handler(CallbackQueryHandler(button))
 
     # log all errors
